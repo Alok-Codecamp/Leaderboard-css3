@@ -95,3 +95,33 @@ hr {
   width: 224px;
   height: 104px;
 }
+.course-info {
+  display: flex;
+  justify-content: space-evenly;
+
+  align-items: center;
+}
+.fa-star {
+  font-size: 12px;
+}
+.fa-star.filled {
+  color: #ffc014;
+}
+.fa-star.empty {
+  color: #aeaeae;
+}
+.course-duration {
+  background-color: #ffe4e8;
+  color: #ff4a60;
+  width: 94px;
+  height: 29px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  padding: 9px 1px 0px 1px;
+  border-radius: 40px;
+}
+.fa-clock {
+  margin-right: 6px;
+  font-size: 16px;
+}
