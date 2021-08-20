@@ -14,3 +14,27 @@ for (const player of players) {
   player.style.margin = "10px";
   player.style.padding = "20px";
 }
+
+// add new item in a list
+document.getElementById("add-item").addEventListener("click", function () {
+  const newLi = document.createElement("li");
+  console.log(newLi);
+  newLi.innerText = "New Item";
+  document.getElementById("item").appendChild(newLi);
+});
+
+// incrase input field value
+
+document.getElementById("inputBtn").addEventListener("click", function () {
+  const input = document.getElementById("myInput");
+  const inputText = input.value;
+  const inputValue = parseInt(inputText);
+
+  // condition
+  if (inputValue <= 5) {
+    input.value = inputValue + 1;
+  }
+  if (input.value == 5) {
+    document.getElementById("inputBtn").setAttribute("disabled", true);
+  }
+});
